@@ -4,7 +4,7 @@ const port = 80
 
 const server = http.createServer((request, response) => {
   response.writeHead(200, {'Content-Type': 'text/plain'})
-  response.write('Hello World\n')
+  response.write('Hello World\nfrom inside a container running in azure aci, auto deployment with tasks \n')
   response.end('Version: ' + process.env.NODE_VERSION + '\n')
 })
 
